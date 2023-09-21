@@ -12,6 +12,15 @@ public class Main {
         int bottles = sc.nextInt();
         //This adds a secondary variable that is equal to "bottles" to be used later to restate the original number of bottles on the wall.
         int originalBottles = bottles;
+        //This starts an "if" statement, giving instructions if the input number of bottles is one.
+        if (bottles == 1) {
+            //This prints out the first line of the song if the above is true.
+            System.out.println(bottles + " bottle of beer on the wall, " + bottles + " bottle of beer.");
+            //This prints out the last line of the song if the above is true.
+            System.out.println("Go to the store and buy some more, " + bottles + " bottle of beer on the wall.");
+            //This ends the program if the "if" statement above is true.
+            return;
+        }
         //This begins the loop statement, saying to execute the following commands if the number of bottles is over two.
             while (bottles > 2) {
                 //This outputs the first line of the song if the condition is true.
@@ -20,6 +29,7 @@ public class Main {
                 System.out.println("Take one down, pass it around, " + (bottles - 1) + " bottles of beer on the wall.");
                 //This redefines "bottles" as the amount of bottles after one has been removed from the wall.
                 bottles = bottles - 1;
+            }
                 //This begins an "if" statment, giving alternate instructions if the starting number of bottles is two.
                 if (bottles == 2) {
                     //This prints out the first line of this verse if the condition is true.
@@ -36,6 +46,5 @@ public class Main {
                     //This prints out the final line of the song if the above is true.
                     System.out.println("Go to the store and buy some more, " + originalBottles + " bottles of beer on the wall.");
                 }
-            }
         }
     }
