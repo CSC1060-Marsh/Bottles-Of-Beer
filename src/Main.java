@@ -16,6 +16,8 @@ public class Main {
         if (bottles == 1) {
             //This prints out the first line of the song if the above is true.
             System.out.println(bottles + " bottle of beer on the wall, " + bottles + " bottle of beer.");
+            //This prints out the second line of the song if the above is true.
+            System.out.println("0 bottles of beer on the wall, 0 bottles of beer.");
             //This prints out the last line of the song if the above is true.
             System.out.println("Go to the store and buy some more, " + bottles + " bottle of beer on the wall.");
             //This ends the program if the "if" statement above is true.
@@ -41,8 +43,12 @@ public class Main {
                 }
                 //This begins a second "if" statement, giving alternate instructions if there is only one bottle left.
                 if (bottles == 1) {
-                    //This outputs the penultimate line of the song if the above is true.
+                    //This outputs the penultimate verse if the above is true.
                     System.out.println(bottles + " bottle of beer on the wall, " + bottles + " bottle of beer.");
+                    //This begins the last verse if the above is true.
+                    System.out.println("Take one down, pass it around, 0 bottles of beer on the wall.");
+                    //This prints out the penultimate line if the above is true.
+                    System.out.println("0 bottles of beer on the wall, 0 bottles of beer.");
                     //This prints out the final line of the song if the above is true.
                     System.out.println("Go to the store and buy some more, " + originalBottles + " bottles of beer on the wall.");
                 }
